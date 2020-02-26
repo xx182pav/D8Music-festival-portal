@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    <h1>Голосование по заявке {{ request.name }}</h1>
+    <br><br>
+    <p><b>Заявитель: </b>{{ request.owner.user.last_name }} {{ request.owner.user.first_name }} ({{ request.owner.user.username }})</p>
+    <p><b>Содержание заявки: </b>{{request.text}}</p>
+    <p><b>Формат: </b>{{request.get_format_display}}</p>
+    <p><b>Желаемая сцена: </b>{{request.desired_scene}}</p>
+    <p><b>Желаемое время выступления: </b>{{request.desired_timeslot}}</p>
+    <p><b>Дополнительная информация: </b>{{request.comment}}</p>
+    <br>
+    <form method="post">
+        {% csrf_token %}
+        <!-- {{ form.as_p }} -->
+        <button type="submit" name="voice" value="YES">Голосую принять</button>
+        <button type="submit" name="voice" value="NO">Голосую отказать</button>
+        <button type="submit" name="voice" value="ABS">Воздерживаюсь</button>
+    </form>
+
+
+
+{% endblock %}

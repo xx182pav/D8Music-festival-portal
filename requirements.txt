@@ -1,0 +1,4 @@
+psycopg2-binary==2.8.4
+django==3.0
+dj_database_url==0.5.0
+

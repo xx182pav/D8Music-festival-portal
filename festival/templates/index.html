@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    <h1>«Глухим Урочищам» нужен портал</h1>
+    <br><br>
+    <h2>Расписание фестиваля</h2>
+    <table class="tbl table">
+    
+    <tr>
+    {% for day, time in schedule.items %}
+        <td>
+            <h3>
+                {{ day }}
+            </h3>
+        
+            <table>
+            {% for time, scene in time.items %}
+                <tr>
+                    <td>
+                        <h4>{{ time }}</h4>
+                        {% for scene, items in scene.items %}
+                                <p><b>{{scene}}</b></p>
+                                {% for i in items %}
+                                <p>{{i.name}}</p>
+                                {% endfor %}
+                        {% endfor %}
+                    </td>     
+                </tr>
+            {% endfor %}
+            </table>
+        </td>
+    {% endfor %}
+    </tr>
+</table>
+{% endblock %}

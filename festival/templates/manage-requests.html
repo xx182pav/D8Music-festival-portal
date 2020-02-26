@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}Заявка на участие{% endblock %}
+
+{% block content %}
+<h2>Заявки на рассмотрении</h2>
+<table class="tbl table">
+    <tr>
+        <th>Название</th>
+        
+        <th>Результаты голосования цензоров</th>
+    </tr>
+    {% for request in requests %}
+        {% if request.status == None %}
+        <tr>
+            <td>
+                <a href="{% url 'festival:voice_create' request_id=request.id %}">
+                    {{ request.name }}
+                </a>
+            </td>
+            
+            <td>
+                {% for voice in request.censor_voices %}
+                    {{ voice }}<br>
+                {% endfor %}
+            </td>
+            <td>
+                {% if request.allow_approve_button %}
+                <form action="/change_status/" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="hidden" name="id" value="{{request.id}}" />
+                    <input type="hidden" name="status" value="1" />
+                    
+                    <select name="timeslot">
+                        {% for ts in avalable_time_slots %}
+                            <option value="{{ts.id}}">{{ ts.scene }} - {{ ts.timeslot }}</option>
+                        {% endfor %}                
+                    </select>
+                    <input class="button" type="submit" value="Добавить в программу" />
+                </form>
+                {% endif %}
+                {% if request.allow_reject_button %}
+                <form action="/change_status/" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="hidden" name="id" value="{{request.id}}" />
+                    <input type="hidden" name="status" value="0"/>
+                    <input class="button" type="submit" value="Отказать в участии" />
+                </form>
+                {% endif %}
+            </td>
+        </tr>
+        {% endif %}
+    {% endfor %}    
+</table>
+
+<h2>Утвержденные заявки</h2>
+    <table class="tbl table">
+        <tr>
+            <th>Название</th>
+            <th>Формат</th>
+            <th>Сцена</th>
+            <th>Время выступления</th>
+        </tr>
+        {% for request in object_list %}
+        {% if request.status == True %}
+            <tr>
+                <td>
+                    {{ request.name }}
+                </td>
+                <td>
+                    {{ request.get_format_display }}
+                </td>
+                <td>
+                    {{ request.scene_slot.scene }}
+                </td>
+                <td>
+                    {{ request.scene_slot.timeslot }}
+                </td>
+            </tr>
+        {% endif %}
+        {% endfor %}
+    </table>
+
+
+<h2>Доступные временные слоты</h2>
+<table class="tbl table">
+    <tr>
+        <th>Сцена</th>
+        <th>Временной слот</th>
+        <th>Свободные окна</th>
+    </tr>
+    {% for ts in avalable_time_slots %}
+    <tr>
+        <td>{{ ts.scene }}</td>
+        <td>{{ ts.timeslot }}</td>
+        <td>{{ ts.count }}</td>
+    </tr>
+    {% endfor %}                
+</table>
+{% endblock %}

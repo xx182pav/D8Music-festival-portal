@@ -1,0 +1,6 @@
+{
+  "name": "LostArea",
+  "description": "Site of Lost Area Festival",
+  "image": "heroku/python",
+  "keywords": ["python", "django" ]
+}

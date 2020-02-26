@@ -1,0 +1,1956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+  <object model="contenttypes.contenttype" pk="1">
+    <field name="app_label" type="CharField">admin</field>
+    <field name="model" type="CharField">logentry</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="2">
+    <field name="app_label" type="CharField">auth</field>
+    <field name="model" type="CharField">permission</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="3">
+    <field name="app_label" type="CharField">auth</field>
+    <field name="model" type="CharField">group</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="4">
+    <field name="app_label" type="CharField">auth</field>
+    <field name="model" type="CharField">user</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="5">
+    <field name="app_label" type="CharField">contenttypes</field>
+    <field name="model" type="CharField">contenttype</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="6">
+    <field name="app_label" type="CharField">sessions</field>
+    <field name="model" type="CharField">session</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="7">
+    <field name="app_label" type="CharField">users</field>
+    <field name="model" type="CharField">userprofile</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="8">
+    <field name="app_label" type="CharField">festival</field>
+    <field name="model" type="CharField">request</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="9">
+    <field name="app_label" type="CharField">festival</field>
+    <field name="model" type="CharField">scene</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="10">
+    <field name="app_label" type="CharField">festival</field>
+    <field name="model" type="CharField">timeslot</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="11">
+    <field name="app_label" type="CharField">festival</field>
+    <field name="model" type="CharField">voice</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="12">
+    <field name="app_label" type="CharField">festival</field>
+    <field name="model" type="CharField">sceneslot</field>
+  </object>
+  <object model="sessions.session" pk="o14kkzngnx3041yd0iqn14tqn5s495dn">
+    <field name="session_data" type="TextField">MTIzOGE3Zjc4NGFmZDgyMTk0ODVmMWIwMDBkNjg2NTNmMzQ5ZGEzZjp7Il9hdXRoX3VzZXJfaWQiOiI1IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4OTcwODNmZGQxMzEzZWI2YzcyMTY0YWQ0NzQwMmNjNDMyMjVjMjNlIn0=</field>
+    <field name="expire_date" type="DateTimeField">2020-01-18T11:20:39.574961+00:00</field>
+  </object>
+  <object model="sessions.session" pk="xjyqw7kmgvvud7im6o6a57g2n17lcjhf">
+    <field name="session_data" type="TextField">Y2YzZDQ3YmQyMGM1OTIzYWFkNTIwYmRkMjE5NTA3NGVjMDhiYTJiZjp7Il9hdXRoX3VzZXJfaWQiOiIxNCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMDg4OGI3ZGFlOWE2ZjljNmNlNjM5OGNjYjlkZjhjZjc0M2U3NWQxMyJ9</field>
+    <field name="expire_date" type="DateTimeField">2020-01-18T09:58:30.076077+00:00</field>
+  </object>
+  <object model="festival.scene" pk="1">
+    <field name="name" type="CharField">Красная</field>
+  </object>
+  <object model="festival.scene" pk="2">
+    <field name="name" type="CharField">Синяя</field>
+  </object>
+  <object model="festival.scene" pk="3">
+    <field name="name" type="CharField">Арбузик</field>
+  </object>
+  <object model="festival.timeslot" pk="1">
+    <field name="day" type="PositiveSmallIntegerField">1</field>
+    <field name="time" type="CharField">D</field>
+  </object>
+  <object model="festival.timeslot" pk="2">
+    <field name="day" type="PositiveSmallIntegerField">1</field>
+    <field name="time" type="CharField">E</field>
+  </object>
+  <object model="festival.timeslot" pk="3">
+    <field name="day" type="PositiveSmallIntegerField">1</field>
+    <field name="time" type="CharField">LE</field>
+  </object>
+  <object model="festival.timeslot" pk="4">
+    <field name="day" type="PositiveSmallIntegerField">2</field>
+    <field name="time" type="CharField">D</field>
+  </object>
+  <object model="festival.timeslot" pk="5">
+    <field name="day" type="PositiveSmallIntegerField">2</field>
+    <field name="time" type="CharField">E</field>
+  </object>
+  <object model="festival.timeslot" pk="6">
+    <field name="day" type="PositiveSmallIntegerField">2</field>
+    <field name="time" type="CharField">LE</field>
+  </object>
+  <object model="festival.sceneslot" pk="1">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">1</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">1</field>
+    <field name="count" type="PositiveSmallIntegerField">4</field>
+  </object>
+  <object model="festival.sceneslot" pk="2">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">1</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">2</field>
+    <field name="count" type="PositiveSmallIntegerField">4</field>
+  </object>
+  <object model="festival.sceneslot" pk="3">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">1</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">3</field>
+    <field name="count" type="PositiveSmallIntegerField">3</field>
+  </object>
+  <object model="festival.sceneslot" pk="4">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">1</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">4</field>
+    <field name="count" type="PositiveSmallIntegerField">3</field>
+  </object>
+  <object model="festival.sceneslot" pk="5">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">1</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">5</field>
+    <field name="count" type="PositiveSmallIntegerField">3</field>
+  </object>
+  <object model="festival.sceneslot" pk="6">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">1</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">6</field>
+    <field name="count" type="PositiveSmallIntegerField">3</field>
+  </object>
+  <object model="festival.sceneslot" pk="7">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">2</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">1</field>
+    <field name="count" type="PositiveSmallIntegerField">2</field>
+  </object>
+  <object model="festival.sceneslot" pk="8">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">2</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">2</field>
+    <field name="count" type="PositiveSmallIntegerField">4</field>
+  </object>
+  <object model="festival.sceneslot" pk="9">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">2</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">3</field>
+    <field name="count" type="PositiveSmallIntegerField">4</field>
+  </object>
+  <object model="festival.sceneslot" pk="10">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">2</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">4</field>
+    <field name="count" type="PositiveSmallIntegerField">5</field>
+  </object>
+  <object model="festival.sceneslot" pk="11">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">2</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">5</field>
+    <field name="count" type="PositiveSmallIntegerField">2</field>
+  </object>
+  <object model="festival.sceneslot" pk="12">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">2</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">6</field>
+    <field name="count" type="PositiveSmallIntegerField">0</field>
+  </object>
+  <object model="festival.sceneslot" pk="13">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">3</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">1</field>
+    <field name="count" type="PositiveSmallIntegerField">0</field>
+  </object>
+  <object model="festival.sceneslot" pk="14">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">3</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">2</field>
+    <field name="count" type="PositiveSmallIntegerField">0</field>
+  </object>
+  <object model="festival.sceneslot" pk="15">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">3</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">3</field>
+    <field name="count" type="PositiveSmallIntegerField">6</field>
+  </object>
+  <object model="festival.sceneslot" pk="16">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">3</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">4</field>
+    <field name="count" type="PositiveSmallIntegerField">0</field>
+  </object>
+  <object model="festival.sceneslot" pk="17">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">3</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">5</field>
+    <field name="count" type="PositiveSmallIntegerField">3</field>
+  </object>
+  <object model="festival.sceneslot" pk="18">
+    <field name="scene" rel="ManyToOneRel" to="festival.scene">3</field>
+    <field name="timeslot" rel="ManyToOneRel" to="festival.timeslot">6</field>
+    <field name="count" type="PositiveSmallIntegerField">3</field>
+  </object>
+  <object model="festival.request" pk="1">
+    <field name="owner" rel="ManyToOneRel" to="users.userprofile">1</field>
+    <field name="name" type="CharField">Мартовские коты</field>
+    <field name="text" type="TextField">песни</field>
+    <field name="format" type="CharField">G</field>
+    <field name="desired_scene" rel="ManyToOneRel" to="festival.scene"><None></None></field>
+    <field name="desired_timeslot" rel="ManyToOneRel" to="festival.timeslot"><None></None></field>
+    <field name="status" type="BooleanField">True</field>
+    <field name="scene_slot" rel="ManyToOneRel" to="festival.sceneslot">1</field>
+    <field name="comment" type="TextField">лучше во второй день</field>
+  </object>
+  <object model="festival.request" pk="2">
+    <field name="owner" rel="ManyToOneRel" to="users.userprofile">7</field>
+    <field name="name" type="CharField">Иван бездомный</field>
+    <field name="text" type="TextField">Рэп</field>
+    <field name="format" type="CharField">S</field>
+    <field name="desired_scene" rel="ManyToOneRel" to="festival.scene">1</field>
+    <field name="desired_timeslot" rel="ManyToOneRel" to="festival.timeslot">1</field>
+    <field name="status" type="BooleanField">True</field>
+    <field name="scene_slot" rel="ManyToOneRel" to="festival.sceneslot">1</field>
+    <field name="comment" type="TextField">Если не дадите выступить удавлюсь</field>
+  </object>
+  <object model="festival.request" pk="3">
+    <field name="owner" rel="ManyToOneRel" to="users.userprofile">10</field>
+    <field name="name" type="CharField">Странные звуки</field>
+    <field name="text" type="TextField">Песни</field>
+    <field name="format" type="CharField">G</field>
+    <field name="desired_scene" rel="ManyToOneRel" to="festival.scene">1</field>
+    <field name="desired_timeslot" rel="ManyToOneRel" to="festival.timeslot">1</field>
+    <field name="status" type="BooleanField">True</field>
+    <field name="scene_slot" rel="ManyToOneRel" to="festival.sceneslot">1</field>
+    <field name="comment" type="TextField"></field>
+  </object>
+  <object model="festival.request" pk="4">
+    <field name="owner" rel="ManyToOneRel" to="users.userprofile">11</field>
+    <field name="name" type="CharField">Орк поправляет берёзу</field>
+    <field name="text" type="TextField">Песни и пляски</field>
+    <field name="format" type="CharField">G</field>
+    <field name="desired_scene" rel="ManyToOneRel" to="festival.scene">1</field>
+    <field name="desired_timeslot" rel="ManyToOneRel" to="festival.timeslot">1</field>
+    <field name="status" type="BooleanField">True</field>
+    <field name="scene_slot" rel="ManyToOneRel" to="festival.sceneslot">1</field>
+    <field name="comment" type="TextField"></field>
+  </object>
+  <object model="festival.request" pk="5">
+    <field name="owner" rel="ManyToOneRel" to="users.userprofile">12</field>
+    <field name="name" type="CharField">Антошка и Ко</field>
+    <field name="text" type="TextField">Песни и пляска</field>
+    <field name="format" type="CharField">G</field>
+    <field name="desired_scene" rel="ManyToOneRel" to="festival.scene">3</field>
+    <field name="desired_timeslot" rel="ManyToOneRel" to="festival.timeslot">1</field>
+    <field name="status" type="BooleanField"><None></None></field>
+    <field name="scene_slot" rel="ManyToOneRel" to="festival.sceneslot"><None></None></field>
+    <field name="comment" type="TextField"></field>
+  </object>
+  <object model="festival.voice" pk="1">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">2</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">1</field>
+  </object>
+  <object model="festival.voice" pk="2">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">3</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">1</field>
+  </object>
+  <object model="festival.voice" pk="3">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">4</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">1</field>
+  </object>
+  <object model="festival.voice" pk="4">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">5</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">1</field>
+  </object>
+  <object model="festival.voice" pk="5">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">6</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">1</field>
+  </object>
+  <object model="festival.voice" pk="6">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">3</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">2</field>
+  </object>
+  <object model="festival.voice" pk="8">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">2</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">2</field>
+  </object>
+  <object model="festival.voice" pk="9">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">4</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">2</field>
+  </object>
+  <object model="festival.voice" pk="10">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">3</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">3</field>
+  </object>
+  <object model="festival.voice" pk="11">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">4</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">3</field>
+  </object>
+  <object model="festival.voice" pk="12">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">5</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">3</field>
+  </object>
+  <object model="festival.voice" pk="13">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">6</field>
+    <field name="voice" type="CharField">ABS</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">3</field>
+  </object>
+  <object model="festival.voice" pk="15">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">3</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">4</field>
+  </object>
+  <object model="festival.voice" pk="16">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">4</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">4</field>
+  </object>
+  <object model="festival.voice" pk="17">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">5</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">4</field>
+  </object>
+  <object model="festival.voice" pk="18">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">6</field>
+    <field name="voice" type="CharField">NO</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">4</field>
+  </object>
+  <object model="festival.voice" pk="21">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">2</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">4</field>
+  </object>
+  <object model="festival.voice" pk="22">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">2</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">3</field>
+  </object>
+  <object model="festival.voice" pk="23">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">3</field>
+    <field name="voice" type="CharField">NO</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">5</field>
+  </object>
+  <object model="festival.voice" pk="24">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">4</field>
+    <field name="voice" type="CharField">NO</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">5</field>
+  </object>
+  <object model="festival.voice" pk="25">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">5</field>
+    <field name="voice" type="CharField">NO</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">5</field>
+  </object>
+  <object model="festival.voice" pk="26">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">6</field>
+    <field name="voice" type="CharField">NO</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">5</field>
+  </object>
+  <object model="festival.voice" pk="27">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">13</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">5</field>
+  </object>
+  <object model="festival.voice" pk="28">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">16</field>
+    <field name="voice" type="CharField">NO</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">5</field>
+  </object>
+  <object model="festival.voice" pk="29">
+    <field name="censor" rel="ManyToOneRel" to="users.userprofile">2</field>
+    <field name="voice" type="CharField">YES</field>
+    <field name="request" rel="ManyToOneRel" to="festival.request">5</field>
+  </object>
+  <object model="auth.permission" pk="1">
+    <field name="name" type="CharField">Can add log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">add_logentry</field>
+  </object>
+  <object model="auth.permission" pk="2">
+    <field name="name" type="CharField">Can change log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">change_logentry</field>
+  </object>
+  <object model="auth.permission" pk="3">
+    <field name="name" type="CharField">Can delete log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">delete_logentry</field>
+  </object>
+  <object model="auth.permission" pk="4">
+    <field name="name" type="CharField">Can view log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">view_logentry</field>
+  </object>
+  <object model="auth.permission" pk="5">
+    <field name="name" type="CharField">Can add permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">add_permission</field>
+  </object>
+  <object model="auth.permission" pk="6">
+    <field name="name" type="CharField">Can change permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">change_permission</field>
+  </object>
+  <object model="auth.permission" pk="7">
+    <field name="name" type="CharField">Can delete permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">delete_permission</field>
+  </object>
+  <object model="auth.permission" pk="8">
+    <field name="name" type="CharField">Can view permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">view_permission</field>
+  </object>
+  <object model="auth.permission" pk="9">
+    <field name="name" type="CharField">Can add group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">add_group</field>
+  </object>
+  <object model="auth.permission" pk="10">
+    <field name="name" type="CharField">Can change group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">change_group</field>
+  </object>
+  <object model="auth.permission" pk="11">
+    <field name="name" type="CharField">Can delete group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">delete_group</field>
+  </object>
+  <object model="auth.permission" pk="12">
+    <field name="name" type="CharField">Can view group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">view_group</field>
+  </object>
+  <object model="auth.permission" pk="13">
+    <field name="name" type="CharField">Can add user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">add_user</field>
+  </object>
+  <object model="auth.permission" pk="14">
+    <field name="name" type="CharField">Can change user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">change_user</field>
+  </object>
+  <object model="auth.permission" pk="15">
+    <field name="name" type="CharField">Can delete user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">delete_user</field>
+  </object>
+  <object model="auth.permission" pk="16">
+    <field name="name" type="CharField">Can view user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">view_user</field>
+  </object>
+  <object model="auth.permission" pk="17">
+    <field name="name" type="CharField">Can add content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">add_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="18">
+    <field name="name" type="CharField">Can change content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">change_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="19">
+    <field name="name" type="CharField">Can delete content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">delete_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="20">
+    <field name="name" type="CharField">Can view content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">view_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="21">
+    <field name="name" type="CharField">Can add session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">add_session</field>
+  </object>
+  <object model="auth.permission" pk="22">
+    <field name="name" type="CharField">Can change session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">change_session</field>
+  </object>
+  <object model="auth.permission" pk="23">
+    <field name="name" type="CharField">Can delete session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">delete_session</field>
+  </object>
+  <object model="auth.permission" pk="24">
+    <field name="name" type="CharField">Can view session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">view_session</field>
+  </object>
+  <object model="auth.permission" pk="25">
+    <field name="name" type="CharField">Can add Профиль пользователя</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">add_userprofile</field>
+  </object>
+  <object model="auth.permission" pk="26">
+    <field name="name" type="CharField">Can change Профиль пользователя</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">change_userprofile</field>
+  </object>
+  <object model="auth.permission" pk="27">
+    <field name="name" type="CharField">Can delete Профиль пользователя</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">delete_userprofile</field>
+  </object>
+  <object model="auth.permission" pk="28">
+    <field name="name" type="CharField">Can view Профиль пользователя</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">view_userprofile</field>
+  </object>
+  <object model="auth.permission" pk="29">
+    <field name="name" type="CharField">Can add Заявка</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">add_request</field>
+  </object>
+  <object model="auth.permission" pk="30">
+    <field name="name" type="CharField">Can change Заявка</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">change_request</field>
+  </object>
+  <object model="auth.permission" pk="31">
+    <field name="name" type="CharField">Can delete Заявка</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">delete_request</field>
+  </object>
+  <object model="auth.permission" pk="32">
+    <field name="name" type="CharField">Can view Заявка</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">view_request</field>
+  </object>
+  <object model="auth.permission" pk="33">
+    <field name="name" type="CharField">Can add Сцена</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">add_scene</field>
+  </object>
+  <object model="auth.permission" pk="34">
+    <field name="name" type="CharField">Can change Сцена</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">change_scene</field>
+  </object>
+  <object model="auth.permission" pk="35">
+    <field name="name" type="CharField">Can delete Сцена</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">delete_scene</field>
+  </object>
+  <object model="auth.permission" pk="36">
+    <field name="name" type="CharField">Can view Сцена</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">view_scene</field>
+  </object>
+  <object model="auth.permission" pk="37">
+    <field name="name" type="CharField">Can add time slot</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="codename" type="CharField">add_timeslot</field>
+  </object>
+  <object model="auth.permission" pk="38">
+    <field name="name" type="CharField">Can change time slot</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="codename" type="CharField">change_timeslot</field>
+  </object>
+  <object model="auth.permission" pk="39">
+    <field name="name" type="CharField">Can delete time slot</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="codename" type="CharField">delete_timeslot</field>
+  </object>
+  <object model="auth.permission" pk="40">
+    <field name="name" type="CharField">Can view time slot</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="codename" type="CharField">view_timeslot</field>
+  </object>
+  <object model="auth.permission" pk="41">
+    <field name="name" type="CharField">Can add Решение цензора</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="codename" type="CharField">add_voice</field>
+  </object>
+  <object model="auth.permission" pk="42">
+    <field name="name" type="CharField">Can change Решение цензора</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="codename" type="CharField">change_voice</field>
+  </object>
+  <object model="auth.permission" pk="43">
+    <field name="name" type="CharField">Can delete Решение цензора</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="codename" type="CharField">delete_voice</field>
+  </object>
+  <object model="auth.permission" pk="44">
+    <field name="name" type="CharField">Can view Решение цензора</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="codename" type="CharField">view_voice</field>
+  </object>
+  <object model="auth.permission" pk="45">
+    <field name="name" type="CharField">Can add scene slot</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="codename" type="CharField">add_sceneslot</field>
+  </object>
+  <object model="auth.permission" pk="46">
+    <field name="name" type="CharField">Can change scene slot</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="codename" type="CharField">change_sceneslot</field>
+  </object>
+  <object model="auth.permission" pk="47">
+    <field name="name" type="CharField">Can delete scene slot</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="codename" type="CharField">delete_sceneslot</field>
+  </object>
+  <object model="auth.permission" pk="48">
+    <field name="name" type="CharField">Can view scene slot</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="codename" type="CharField">view_sceneslot</field>
+  </object>
+  <object model="auth.group" pk="1">
+    <field name="name" type="CharField">Кураторы</field>
+    <field name="permissions" rel="ManyToManyRel" to="auth.permission"><object pk="30"></object></field>
+  </object>
+  <object model="auth.user" pk="1">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$UblJoGwTzP1U$M22SxvTW84AJG+DvpXC3MX3sesoIwLtbV0dk0A3Upv4=</field>
+    <field name="last_login" type="DateTimeField">2020-01-04T10:09:49.794132+00:00</field>
+    <field name="is_superuser" type="BooleanField">True</field>
+    <field name="username" type="CharField">admin</field>
+    <field name="first_name" type="CharField">Администратор</field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">True</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2019-12-30T23:39:25+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"><object pk="1"></object></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="auth.user" pk="2">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$OrsjkX5DAvFo$hED4AvREVq8fA90Q3d5C4lIQIoiCIALNzhZEHxWesa0=</field>
+    <field name="last_login" type="DateTimeField">2020-01-04T09:00:23.496035+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">m1</field>
+    <field name="first_name" type="CharField">Музыкант 1</field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2019-12-30T23:40:06+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="auth.user" pk="3">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$7dRu3GDEF4A0$W56JaMEODiW233gmGkJeN73Zb9JIsN2Nt5NSFQQ9j2g=</field>
+    <field name="last_login" type="DateTimeField">2020-01-04T09:46:24.911555+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">c1</field>
+    <field name="first_name" type="CharField">Куратор</field>
+    <field name="last_name" type="CharField">1</field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2019-12-31T00:00:40+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"><object pk="1"></object></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="auth.user" pk="4">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$Tgf0GECuwH2V$GcAemzBfDyNZc3flsON5OYNH2W6sJWqN+Dd3qAegAvM=</field>
+    <field name="last_login" type="DateTimeField">2020-01-04T09:46:10.488842+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">c2</field>
+    <field name="first_name" type="CharField">Куратор 2</field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2019-12-31T00:01:15+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"><object pk="1"></object></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="auth.user" pk="5">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$eJsKACVqVuJH$emOKuJanldNu6pYHdStujgLMiIm0QgEqztVABJsjGMU=</field>
+    <field name="last_login" type="DateTimeField">2020-01-04T11:20:39.566405+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">c3</field>
+    <field name="first_name" type="CharField">Куратор 3</field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2019-12-31T00:01:43+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"><object pk="1"></object></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="auth.user" pk="6">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$XBd0acC9PCvs$cNa2KUcvzLCPhWjFv4Pifn9CSM2Fv3+VCqyJMd6SkBQ=</field>
+    <field name="last_login" type="DateTimeField">2020-01-04T09:23:36.488136+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">c4</field>
+    <field name="first_name" type="CharField">Куратор 4</field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2019-12-31T00:02:21+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"><object pk="1"></object></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="auth.user" pk="7">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$X1UbA8GWbEIA$U5aqNWHEnoDJi4mfkNjbIungtYmghKYlmvDUJEx0hgE=</field>
+    <field name="last_login" type="DateTimeField">2019-12-31T08:55:36+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">m2</field>
+    <field name="first_name" type="CharField">Музыкант 2</field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2019-12-31T08:55:35+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="auth.user" pk="10">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$6UwpjVXLPn0a$yUAgqGv2Y3ACd1cLYqcyywTZspd0YgVeWMgG49MMx48=</field>
+    <field name="last_login" type="DateTimeField">2020-01-02T19:49:29+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">m3</field>
+    <field name="first_name" type="CharField">Музыкант</field>
+    <field name="last_name" type="CharField">3</field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2020-01-02T19:49:28+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="auth.user" pk="11">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$RscXVGbRErPI$u2ya75ZCRtvzp5r9ajtcPZkUO5VuC98jDD3jTHPVcp8=</field>
+    <field name="last_login" type="DateTimeField">2020-01-04T10:09:17.569432+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">m4</field>
+    <field name="first_name" type="CharField"></field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2020-01-02T21:33:35.320092+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="auth.user" pk="12">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$vgTOQ177q1Qn$DzaW59vNFsQZig8EpJ+BwGM2YqUOMxd28yicbxETwH4=</field>
+    <field name="last_login" type="DateTimeField">2020-01-04T09:51:14.782561+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">c5</field>
+    <field name="first_name" type="CharField">Куратор</field>
+    <field name="last_name" type="CharField">5</field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2020-01-02T21:40:48+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"><object pk="1"></object></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="auth.user" pk="14">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$rQDGxGC2QOEE$+DN2c0a5mF9c6Sr8xE0i81P04+KrlMsKM3XAg9s9UJI=</field>
+    <field name="last_login" type="DateTimeField">2020-01-04T10:09:05.844329+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">m5</field>
+    <field name="first_name" type="CharField"></field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2020-01-04T09:13:38.253173+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="auth.user" pk="15">
+    <field name="password" type="CharField">pbkdf2_sha256$150000$1XvOBsfmAuj2$aBbYmJYJDa6BDbVUIl8nqdgX93yX6yX2EG+IUachc9c=</field>
+    <field name="last_login" type="DateTimeField">2020-01-04T09:51:31.277032+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">c6</field>
+    <field name="first_name" type="CharField">Куратор</field>
+    <field name="last_name" type="CharField">6</field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2020-01-04T09:49:30+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"><object pk="1"></object></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="users.userprofile" pk="1">
+    <field name="info" type="TextField">Звонить с 12:05 до 13:15 по пятницам</field>
+    <field name="user" rel="OneToOneRel" to="auth.user">2</field>
+  </object>
+  <object model="users.userprofile" pk="2">
+    <field name="info" type="TextField"></field>
+    <field name="user" rel="OneToOneRel" to="auth.user">1</field>
+  </object>
+  <object model="users.userprofile" pk="3">
+    <field name="info" type="TextField">c1</field>
+    <field name="user" rel="OneToOneRel" to="auth.user">3</field>
+  </object>
+  <object model="users.userprofile" pk="4">
+    <field name="info" type="TextField"></field>
+    <field name="user" rel="OneToOneRel" to="auth.user">4</field>
+  </object>
+  <object model="users.userprofile" pk="5">
+    <field name="info" type="TextField"></field>
+    <field name="user" rel="OneToOneRel" to="auth.user">5</field>
+  </object>
+  <object model="users.userprofile" pk="6">
+    <field name="info" type="TextField"></field>
+    <field name="user" rel="OneToOneRel" to="auth.user">6</field>
+  </object>
+  <object model="users.userprofile" pk="7">
+    <field name="info" type="TextField"></field>
+    <field name="user" rel="OneToOneRel" to="auth.user">7</field>
+  </object>
+  <object model="users.userprofile" pk="10">
+    <field name="info" type="TextField"></field>
+    <field name="user" rel="OneToOneRel" to="auth.user">10</field>
+  </object>
+  <object model="users.userprofile" pk="11">
+    <field name="info" type="TextField"></field>
+    <field name="user" rel="OneToOneRel" to="auth.user">11</field>
+  </object>
+  <object model="users.userprofile" pk="12">
+    <field name="info" type="TextField"></field>
+    <field name="user" rel="OneToOneRel" to="auth.user">14</field>
+  </object>
+  <object model="users.userprofile" pk="13">
+    <field name="info" type="TextField"></field>
+    <field name="user" rel="OneToOneRel" to="auth.user">12</field>
+  </object>
+  <object model="users.userprofile" pk="16">
+    <field name="info" type="TextField"></field>
+    <field name="user" rel="OneToOneRel" to="auth.user">15</field>
+  </object>
+  <object model="admin.logentry" pk="1">
+    <field name="action_time" type="DateTimeField">2019-12-30T23:42:16.256554+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Красная</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="2">
+    <field name="action_time" type="DateTimeField">2019-12-30T23:42:20.956574+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Синяя</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="3">
+    <field name="action_time" type="DateTimeField">2019-12-30T23:42:26.940999+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">Арбузик</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="4">
+    <field name="action_time" type="DateTimeField">2019-12-30T23:47:20.313806+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">TimeSlot object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="5">
+    <field name="action_time" type="DateTimeField">2019-12-30T23:56:48.226568+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">admin</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="6">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:00:40.776317+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">c1</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="7">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:00:43.995454+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">c1</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="8">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:01:15.677983+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">4</field>
+    <field name="object_repr" type="CharField">c2</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="9">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:01:17.310760+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">4</field>
+    <field name="object_repr" type="CharField">c2</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="10">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:01:43.407608+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">5</field>
+    <field name="object_repr" type="CharField">c3</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="11">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:01:53.127638+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">5</field>
+    <field name="object_repr" type="CharField">c3</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="12">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:02:21.696547+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">6</field>
+    <field name="object_repr" type="CharField">c4</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="13">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:02:34.660809+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">4</field>
+    <field name="object_repr" type="CharField">c2</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["info"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="14">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:02:39.914697+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">5</field>
+    <field name="object_repr" type="CharField">c3</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["info"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="15">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:02:55.205881+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">6</field>
+    <field name="object_repr" type="CharField">c4</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="16">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:13:26.125771+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Кураторы</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="17">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:13:46.627915+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">c1</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["groups"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="18">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:13:55.120477+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">4</field>
+    <field name="object_repr" type="CharField">c2</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["groups"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="19">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:14:02.490868+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">5</field>
+    <field name="object_repr" type="CharField">c3</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["groups"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="20">
+    <field name="action_time" type="DateTimeField">2019-12-31T00:14:09.646892+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">6</field>
+    <field name="object_repr" type="CharField">c4</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["groups"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="21">
+    <field name="action_time" type="DateTimeField">2019-12-31T09:19:25.961146+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">7</field>
+    <field name="object_repr" type="CharField">Voice object (7)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">3</field>
+    <field name="change_message" type="TextField"></field>
+  </object>
+  <object model="admin.logentry" pk="22">
+    <field name="action_time" type="DateTimeField">2019-12-31T09:57:13.973550+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Request object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["desired_scene", "desired_timeslot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="23">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:09:45.431841+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">SceneSlot object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="24">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:10:16.699722+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Первый день: Вечер</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="25">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:10:22.487438+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">SceneSlot object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="26">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:10:39.591661+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">Первый день: Поздний вечер</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="27">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:10:47.260966+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">SceneSlot object (3)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="28">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:11:06.670341+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="object_id" type="TextField">4</field>
+    <field name="object_repr" type="CharField">Второй день: День</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="29">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:11:13.047174+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">4</field>
+    <field name="object_repr" type="CharField">SceneSlot object (4)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="30">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:11:53.632625+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="object_id" type="TextField">5</field>
+    <field name="object_repr" type="CharField">Второй день: Вечер</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="31">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:12:00.982435+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">5</field>
+    <field name="object_repr" type="CharField">SceneSlot object (5)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="32">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:12:22.165164+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="object_id" type="TextField">6</field>
+    <field name="object_repr" type="CharField">Второй день: Поздний вечер</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="33">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:12:28.330719+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">6</field>
+    <field name="object_repr" type="CharField">SceneSlot object (6)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="34">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:13:09.913927+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">7</field>
+    <field name="object_repr" type="CharField">SceneSlot object (7)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="35">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:13:21.008184+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">8</field>
+    <field name="object_repr" type="CharField">SceneSlot object (8)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="36">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:13:34.905614+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">9</field>
+    <field name="object_repr" type="CharField">SceneSlot object (9)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="37">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:13:52.824064+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">10</field>
+    <field name="object_repr" type="CharField">SceneSlot object (10)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="38">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:14:04.192356+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">11</field>
+    <field name="object_repr" type="CharField">SceneSlot object (11)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="39">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:14:15.841998+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">12</field>
+    <field name="object_repr" type="CharField">SceneSlot object (12)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="40">
+    <field name="action_time" type="DateTimeField">2019-12-31T10:14:35.748317+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">13</field>
+    <field name="object_repr" type="CharField">SceneSlot object (13)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="41">
+    <field name="action_time" type="DateTimeField">2019-12-31T13:34:13.435161+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">Voice object (3)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["voice"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="42">
+    <field name="action_time" type="DateTimeField">2019-12-31T13:34:19.016854+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Voice object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["voice"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="43">
+    <field name="action_time" type="DateTimeField">2019-12-31T13:53:49.211236+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status", "scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="44">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:15:24.936877+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">admin</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="45">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:15:36.051707+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">c1</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="46">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:15:46.316544+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">4</field>
+    <field name="object_repr" type="CharField">c2</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="47">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:15:52.970260+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">5</field>
+    <field name="object_repr" type="CharField">c3</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="48">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:15:58.258061+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">6</field>
+    <field name="object_repr" type="CharField">c4</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="49">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:16:05.188304+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">m1</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="50">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:16:14.766355+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">7</field>
+    <field name="object_repr" type="CharField">m2</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="51">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:28:27.075376+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">8</field>
+    <field name="object_repr" type="CharField">с5</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="52">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:28:31.117836+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">8</field>
+    <field name="object_repr" type="CharField">с5</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="53">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:28:43.151250+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">8</field>
+    <field name="object_repr" type="CharField">с5</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[]</field>
+  </object>
+  <object model="admin.logentry" pk="54">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:29:07.538927+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">9</field>
+    <field name="object_repr" type="CharField">с6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="55">
+    <field name="action_time" type="DateTimeField">2019-12-31T14:29:09.314462+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">9</field>
+    <field name="object_repr" type="CharField">с6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="56">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:20:53.244254+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Request object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="57">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:21:51.047912+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="58">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:22:38.303936+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="59">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:23:56.491754+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Request object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="60">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:24:09.616815+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[]</field>
+  </object>
+  <object model="admin.logentry" pk="61">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:24:14.928403+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[]</field>
+  </object>
+  <object model="admin.logentry" pk="62">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:24:30.171939+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Request object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="63">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:24:37.233535+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="64">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:32:48.521095+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="65">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:34:08.278436+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="66">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:34:23.554047+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Request object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="67">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:37:38.032219+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="68">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:40:08.236614+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="69">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:45:05.117753+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">14</field>
+    <field name="object_repr" type="CharField">SceneSlot object (14)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="70">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:45:20.605815+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">15</field>
+    <field name="object_repr" type="CharField">SceneSlot object (15)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="71">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:45:35.137395+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">16</field>
+    <field name="object_repr" type="CharField">SceneSlot object (16)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="72">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:45:54.801794+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">17</field>
+    <field name="object_repr" type="CharField">SceneSlot object (17)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="73">
+    <field name="action_time" type="DateTimeField">2020-01-02T06:46:05.690790+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="object_id" type="TextField">18</field>
+    <field name="object_repr" type="CharField">SceneSlot object (18)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="74">
+    <field name="action_time" type="DateTimeField">2020-01-02T07:39:56.037087+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Request object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="75">
+    <field name="action_time" type="DateTimeField">2020-01-02T07:40:22.972820+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="76">
+    <field name="action_time" type="DateTimeField">2020-01-02T19:24:04.364510+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="77">
+    <field name="action_time" type="DateTimeField">2020-01-02T19:44:14.560210+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Request object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status", "scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="78">
+    <field name="action_time" type="DateTimeField">2020-01-02T19:44:24.797381+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status", "scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="79">
+    <field name="action_time" type="DateTimeField">2020-01-02T19:45:29.043323+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Request object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="80">
+    <field name="action_time" type="DateTimeField">2020-01-02T19:45:35.416773+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="81">
+    <field name="action_time" type="DateTimeField">2020-01-02T19:47:26.898508+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="82">
+    <field name="action_time" type="DateTimeField">2020-01-02T19:47:40.114802+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Request object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status", "scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="83">
+    <field name="action_time" type="DateTimeField">2020-01-02T19:52:20.923535+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">c1</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name", "last_name"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="84">
+    <field name="action_time" type="DateTimeField">2020-01-02T19:53:48.865329+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">Request object (3)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="85">
+    <field name="action_time" type="DateTimeField">2020-01-02T19:59:18.468476+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">12</field>
+    <field name="object_repr" type="CharField">Voice object (12)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="86">
+    <field name="action_time" type="DateTimeField">2020-01-02T19:59:39.532038+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">13</field>
+    <field name="object_repr" type="CharField">Voice object (13)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="87">
+    <field name="action_time" type="DateTimeField">2020-01-02T20:01:23.926133+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">Request object (3)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="88">
+    <field name="action_time" type="DateTimeField">2020-01-02T20:55:24.158708+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">10</field>
+    <field name="object_repr" type="CharField">m3</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name", "last_name"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="89">
+    <field name="action_time" type="DateTimeField">2020-01-02T20:59:10.518343+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">Request object (3)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status", "scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="90">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:29:39.935652+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">14</field>
+    <field name="object_repr" type="CharField">Voice object (14)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">3</field>
+    <field name="change_message" type="TextField"></field>
+  </object>
+  <object model="admin.logentry" pk="91">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:31:21.797755+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">11</field>
+    <field name="object_repr" type="CharField">Voice object (11)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["voice"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="92">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:31:38.634604+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">11</field>
+    <field name="object_repr" type="CharField">Voice object (11)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["voice"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="93">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:40:48.629204+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">12</field>
+    <field name="object_repr" type="CharField">c5</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="94">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:41:09.615749+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">12</field>
+    <field name="object_repr" type="CharField">c5</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name", "last_name", "groups"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="95">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:41:27.650424+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">13</field>
+    <field name="object_repr" type="CharField">c6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="96">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:41:43.039984+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">13</field>
+    <field name="object_repr" type="CharField">c6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name", "last_name", "groups"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="97">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:42:26.004613+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status", "scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="98">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:42:34.186490+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">2</field>
+    <field name="object_repr" type="CharField">Request object (2)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status", "scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="99">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:42:41.837662+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">3</field>
+    <field name="object_repr" type="CharField">Request object (3)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status", "scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="100">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:43:17.895699+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">admin</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["groups"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="101">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:46:23.380535+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">1</field>
+    <field name="object_repr" type="CharField">Request object (1)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status", "scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="102">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:49:33.093951+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">13</field>
+    <field name="object_repr" type="CharField">Voice object (13)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["voice"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="103">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:53:22.462792+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">16</field>
+    <field name="object_repr" type="CharField">Voice object (16)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="104">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:53:58.388687+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">17</field>
+    <field name="object_repr" type="CharField">Voice object (17)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="105">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:54:14.491564+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">18</field>
+    <field name="object_repr" type="CharField">Voice object (18)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="106">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:54:24.846400+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">19</field>
+    <field name="object_repr" type="CharField">Voice object (19)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="107">
+    <field name="action_time" type="DateTimeField">2020-01-02T21:54:38.647695+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="object_id" type="TextField">20</field>
+    <field name="object_repr" type="CharField">Voice object (20)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="108">
+    <field name="action_time" type="DateTimeField">2020-01-02T22:20:33.655123+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">4</field>
+    <field name="object_repr" type="CharField">Request object (4)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status", "scene_slot"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="109">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:24:55.632118+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">8</field>
+    <field name="object_repr" type="CharField">с5</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[]</field>
+  </object>
+  <object model="admin.logentry" pk="110">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:25:42.907442+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">8</field>
+    <field name="object_repr" type="CharField">с5</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["info"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="111">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:28:14.385262+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">8</field>
+    <field name="object_repr" type="CharField">с5</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">3</field>
+    <field name="change_message" type="TextField"></field>
+  </object>
+  <object model="admin.logentry" pk="112">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:28:23.037627+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">13</field>
+    <field name="object_repr" type="CharField">c5</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="113">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:29:14.606729+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">9</field>
+    <field name="object_repr" type="CharField">с6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[]</field>
+  </object>
+  <object model="admin.logentry" pk="114">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:29:33.082460+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">9</field>
+    <field name="object_repr" type="CharField">с6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">3</field>
+    <field name="change_message" type="TextField"></field>
+  </object>
+  <object model="admin.logentry" pk="115">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:29:43.106778+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">14</field>
+    <field name="object_repr" type="CharField">с6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="116">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:30:03.952901+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">14</field>
+    <field name="object_repr" type="CharField">с6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">3</field>
+    <field name="change_message" type="TextField"></field>
+  </object>
+  <object model="admin.logentry" pk="117">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:30:09.527554+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">15</field>
+    <field name="object_repr" type="CharField">с6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="118">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:39:28.115378+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">15</field>
+    <field name="object_repr" type="CharField">с6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["info"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="119">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:47:20.192596+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">9</field>
+    <field name="object_repr" type="CharField">с6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">3</field>
+    <field name="change_message" type="TextField"></field>
+  </object>
+  <object model="admin.logentry" pk="120">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:48:30.363708+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">13</field>
+    <field name="object_repr" type="CharField">c6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">3</field>
+    <field name="change_message" type="TextField"></field>
+  </object>
+  <object model="admin.logentry" pk="121">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:49:10.327080+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">8</field>
+    <field name="object_repr" type="CharField">с5</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">3</field>
+    <field name="change_message" type="TextField"></field>
+  </object>
+  <object model="admin.logentry" pk="122">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:49:30.847645+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">15</field>
+    <field name="object_repr" type="CharField">c6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="123">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:49:50.410285+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="object_id" type="TextField">15</field>
+    <field name="object_repr" type="CharField">c6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["first_name", "last_name", "groups"]}}]</field>
+  </object>
+  <object model="admin.logentry" pk="124">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:50:51.743943+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">16</field>
+    <field name="object_repr" type="CharField">c6</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+    <field name="change_message" type="TextField">[{"added": {}}]</field>
+  </object>
+  <object model="admin.logentry" pk="125">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:51:01.169441+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="object_id" type="TextField">13</field>
+    <field name="object_repr" type="CharField">c5</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[]</field>
+  </object>
+  <object model="admin.logentry" pk="126">
+    <field name="action_time" type="DateTimeField">2020-01-04T09:58:22.201216+00:00</field>
+    <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="object_id" type="TextField">5</field>
+    <field name="object_repr" type="CharField">Request object (5)</field>
+    <field name="action_flag" type="PositiveSmallIntegerField">2</field>
+    <field name="change_message" type="TextField">[{"changed": {"fields": ["status"]}}]</field>
+  </object>
+</django-objects>

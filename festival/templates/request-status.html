@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    <h1>Информация о статусе заявки: {{ object.name }}</h1>
+    <br><br>
+    {% if object.status == True %}
+        <h3>Заявка утверждена</h3>
+        <br>
+        <p><b>Сцена: </b>{{ object.scene_slot.scene.name }}</p>
+        <p><b>Время выступления: </b>{{ object.scene_slot.timeslot }}</p>
+    {% elif object.status == False %}
+        <h3>Заявка отклонена</h3>
+    {% else %}
+        <h3>Заявка в процессе обсуждения кураторами</h3>
+        <br>
+        {% for v in object.voice_set.all %}
+            <p>{{v.censor.user.first_name}} {{v.censor.user.last_name}} ({{ v.censor }}) - {{ v.get_voice_display }}</p>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
