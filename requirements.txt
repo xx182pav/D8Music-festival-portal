@@ -1,4 +1,4 @@
 psycopg2-binary==2.8.4
-django==3.1.13
+django==3.1.14
 dj_database_url==0.5.0
 
